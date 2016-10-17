@@ -41,6 +41,7 @@ public class EnemyShipTesting {
 		
 		Scanner userInput = new Scanner(System.in);
 		
+		
 		System.out.println("What type ship? (U/R/B)");
 		
 		if(userInput.hasNextLine()) {
@@ -51,7 +52,6 @@ public class EnemyShipTesting {
 		if (theEnemy != null) {
 			doStuffEnemy(theEnemy);
 		}else System.out.println("Enter a U, R, or B next time");
-		
 	}
 
 
