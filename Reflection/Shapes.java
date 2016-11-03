@@ -113,7 +113,7 @@ public class Shapes {
 		} catch (IllegalAccessException e) {
 			System.out.println("can not access");
 		}
-		Integer it = 0;
+		Integer it = new Integer(3);
 		try {
 			System.out.println(it.getClass().newInstance());
 		} catch (InstantiationException e) {
@@ -126,6 +126,14 @@ public class Shapes {
 			System.out.println(st.getClass().newInstance() + "string is an Object");
 		} catch (InstantiationException e) {
 			System.out.println("instantiation error");
+		} catch (IllegalAccessException e) {
+			System.out.println("can not access");
+		}
+		Character ch = 's';
+		try {
+			System.out.println(ch.getClass().newInstance() + "Character is an Object");
+		} catch (InstantiationException e) {
+			System.out.println("instantiation error" + "Character is primitive type");
 		} catch (IllegalAccessException e) {
 			System.out.println("can not access");
 		}
